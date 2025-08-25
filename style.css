@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(226, 241, 247);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(fundo.jpg);
+    height: 200px;
+    width: 100%;
+    box-shadow: 6px 6px 12px darkblue;
+    transition: all 2s;
+}
+
+.atualizado{
+    display: block;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+
+.titulo{
+    display: block;
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    color: white;
+    width: 100%;
+    text-shadow: 2px 2px 4px gray;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: [first] 50% [second] 50% [third];
+    grid-template-rows: [row1] 600px [row2] 600px [row3];
+    grid-template-areas:
+        "topleft topright"
+        "middleleft middleright";
+    justify-items: center;
+    align-items: center;
+}
+
+img{
+    height: 400px;
+    width: 400px;
+    grid-area: topleft;
+    box-shadow: 4px 4px 8px lightgray;
+    border-radius: 30px;
+    transition: width 1s, height 1s, box-shadow 2s;
+}
+
+img:hover{
+    height: 450px;
+    width: 450px;
+    box-shadow: 6px 6px 12px gray;
+}
+
+.biografia{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    font-size: 30px;
+    text-align:justify;
+    padding-right: 100px;
+}
+
+ul{
+    grid-area: middleleft;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+ul > li{
+    font-size: 30px;
+}
+
+ol{
+    grid-area: middleright;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+ol > li{
+    font-size: 30px;
+}
+
+footer{
+    height: 50px;
+    background-image: url(fundo.jpg);
+    box-shadow: 3px 3px 6px blue;
+}
+
+.info{
+    color: white;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+@media(max-width: 767px){
+    .titulo{
+        font-size: 30px;
+        padding-top: 20px;
+        text-shadow: 1px 1px 2px gray;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    .atualizado{
+        font-size:7px;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        margin:20px;
+        height: 250px;
+        width: 250px;
+    }
+
+    img:hover{
+        height: 300px;
+        width: 300px;
+    }
+
+    .biografia{
+        padding:20px;
+        font-size: 15px;
+    }
+
+    ul{
+        font-size: 15px;
+    }
+
+    ul > li{
+        font-size:15px;
+    }
+
+    ol{
+        font-size: 15px;
+    }
+
+    ol > li{
+        font-size: 15px;
+    }
+
+    footer{
+        height: 25px;
+    }
+
+    .info{
+        padding-top:10px;
+        padding-left: 10px;
+        font-size: 10px;;
+    }
+}
