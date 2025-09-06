@@ -1,4 +1,4 @@
-As i start my web development career, a portfolio was one of the most sugested projects, and here is mine.
+As i start my web development learning, a portfolio was one of the most sugested projects, and here is mine.
 I started by creating a scetch in my notebook to have an idea of what it would look.
 After that i divided my project in three parts: header, main and footer.
 In the header, the idea was to add in the left corner the date of the last time it was written, and, in the middle, the title "Portfolio".
